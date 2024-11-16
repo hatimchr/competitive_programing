@@ -46,24 +46,29 @@ int main()
         }
         i++;
     }
-    if (math < code)
-    {
-        if (math < pe)
-        {
-            teams = math;
-        }
-        else
-            teams = pe;
-    }
-    else
-    {
-        if (code < pe)
-        {
-            teams = code;
-        }
-        else
-            teams = pe;
-    }
+    // if (math < code)
+    // {
+    //     if (math < pe)
+    //     {
+    //         teams = math;
+    //     }
+    //     else
+    //         teams = pe;
+    // }
+    // else
+    // {
+    //     if (code < pe)
+    //     {
+    //         teams = code;
+    //     }
+    //     else
+    //         teams = pe;
+    // }
+    teams = code;
+    if (math < teams)
+        teams = math;
+    if (pe < teams)
+        teams = pe;
     printf("%d\n", teams);
     i =0;
     while (i < teams)
