@@ -13,19 +13,15 @@ int main()
     int n_student;
     int student[5000];
     scanf("%d", &n_student);
+    int ma_index[n_student];
+    int co_index[n_student];
+    int pe_index[n_student];
     for (int i = 0; i < n_student; i++)
     {
         if (scanf("%d", &student[i]) != 1) {
             printf("Error reading input.\n");
             return 1;
         }
-    }
-    i =0;
-    int ma_index[n_student];
-    int co_index[n_student];
-    int pe_index[n_student];
-    while (student[i])
-    {
         if (student[i] == 1)
         {
             code++;
@@ -40,29 +36,15 @@ int main()
         }
         if (student[i] == 3)
         {
-            pe_index[x] = i;
             pe++;
+            pe_index[x] = i;
             x++;
         }
-        i++;
+        // i++;
     }
-    // if (math < code)
+    // i =0;
+    // while (student[i])
     // {
-    //     if (math < pe)
-    //     {
-    //         teams = math;
-    //     }
-    //     else
-    //         teams = pe;
-    // }
-    // else
-    // {
-    //     if (code < pe)
-    //     {
-    //         teams = code;
-    //     }
-    //     else
-    //         teams = pe;
     // }
     teams = code;
     if (math < teams)
