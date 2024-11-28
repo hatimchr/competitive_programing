@@ -33,7 +33,7 @@ int main()
                 op++;
             }
         }
-        printf("%d", op);
+        printf("%d\n", op);
         cs++;
     }
 }
