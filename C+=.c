@@ -3,38 +3,37 @@
 int main()
 {
     int ln;
-    int j = 0;
     int op;
     int i =0;
     int count;
     int cs = 0;
     scanf("%d", &ln);
-    count = 3 * ln;
+    count = 3;
     int num[ln];
-    while(i< count)
-    {
-        scanf("%d", &num[i]);
-        i++;
-    }
     while (cs < ln)
     {
         /* code */
         op = 0;
-        while (num[j + 0] <= num[j + 2] && num[j + 1] <= num[j + 2])
+        i = 0;
+        while(i< count)
         {
-            if (num[j + 1] < num[j + 0])
+            scanf("%d", &num[i]);
+            i++;
+        }
+        while (num[0] <= num[2] && num[1] <= num[2])
+        {
+            if (num[1] < num[0])
             {
-                num[j + 1] += num[j + 0];
+                num[1] += num[0];
                 op++;
             }
             else
             {
-                num[j + 0] += num[j + 1];
+                num[0] += num[1];
                 op++;
             }
         }
-        printf("operation %d\n", op);
-        j += 3;
+        printf("%d", op);
         cs++;
     }
     
