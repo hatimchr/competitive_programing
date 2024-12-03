@@ -9,7 +9,15 @@ int main()
     {
         cost = cost + (i * k);
     }
-    printf("%d\n", cost - n);
+    if (cost > n)
+    {
+        printf("%d\n", cost - n);
+        /* code */
+    }
+    else
+        printf("%d\n", 0);
+
+    
     
     // printf(" %d %d %d [cost: %d]\n", k, n, w, cost);
 }
