@@ -16,8 +16,5 @@ int main()
     }
     else
         printf("%d\n", 0);
-
-    
-    
     // printf(" %d %d %d [cost: %d]\n", k, n, w, cost);
 }
